@@ -1,0 +1,16 @@
+.PreLoader{
+    width: 100% !important;
+    position: fixed;
+    height: calc(100vh - 67px);
+    left: 0%;
+    bottom: 0;
+    background-color: #e6e6e6;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PreLoader img{
+    width: 150px !important;
+    height: 150px !important;
+}

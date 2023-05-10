@@ -1,0 +1,23 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body{
+  overflow-x:hidden ;
+}
+.App {
+  min-height: 100vh;
+  background-color: #eee;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #056BE1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}

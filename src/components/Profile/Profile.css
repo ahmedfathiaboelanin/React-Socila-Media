@@ -1,0 +1,9 @@
+.profile{
+    height: calc(100vh - 71px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.Img{
+    width: 100px !important;
+    height: 100px !important;
+}

@@ -1,0 +1,45 @@
+.postPage{
+    padding: 20px;
+}
+.commentArea{
+    background-color: #fff;
+    border-radius: 10px;
+    height: 250px;
+    overflow-y: auto;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+.input{
+    position: relative;
+}
+.input input{
+    width: 100%;
+    height: 37px;
+    border: 1px solid #b9b9b9;
+    padding-left: 20px;
+    outline: none;
+}
+.input button{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 37px;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b9b9b9;
+    color: #056BE1;
+}
+.comments{
+    width: 100%;
+    background-color: #e6e5e6;
+    /* padding: 10px; */
+    margin-top: 10px;
+}
+.commentBody{
+    padding: 10px 50px 30px;
+}

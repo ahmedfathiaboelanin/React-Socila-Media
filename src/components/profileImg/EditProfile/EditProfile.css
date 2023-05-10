@@ -1,0 +1,21 @@
+.updateForm{
+    background-color: rgb(255, 255, 255);
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+.updateForm input, .updateForm button{
+    height: 40px !important;
+    width: 90% !important;
+}
+.updateForm button{
+    color: white !important;
+}
+.edit{
+    height: calc(100vh - 71px);
+    align-items: center;
+    justify-content: center;
+}

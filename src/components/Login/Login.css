@@ -1,0 +1,33 @@
+.login{    
+    min-height: 100vh;
+}
+.login .row{
+    height: 100% !important;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px 30px !important;
+    border-radius: 10px;
+}
+.loginForm img{
+    margin-bottom: 20px;
+    width: 150px  !important;
+    height: 150px !important;
+    border-radius: 50%;
+}
+.loginForm input, .loginForm button{
+    height: 40px !important;
+    width: 90% !important;
+}
+.loginForm button{
+    color: white !important;
+}
+.logo img{
+    width: 300px;
+    height: 300px;
+}

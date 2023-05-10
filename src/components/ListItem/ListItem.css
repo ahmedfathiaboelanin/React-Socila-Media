@@ -1,0 +1,17 @@
+.item{
+    text-decoration: none;
+    width: 100%;
+    color: #545454;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.item:hover{
+    background-color: #e0e0e0;
+    color: #545454;
+}
+img{
+    width: 50px !important;
+    height: 50px !important;
+}

@@ -1,0 +1,49 @@
+.post{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.post-header{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.post-content{
+    padding: 10px 40px;
+    width: 90%;
+}
+.likeCount{
+    padding: 0px 50px;
+}
+.post-foot{
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-foot button,.post-foot .comment{
+    width: 100%;
+    border: none;
+    padding:5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #e6e6e6;
+    color: black;
+}
+.react{
+    border-right: 1px solid #545454 !important;
+}
+.liked{
+    color: #056BE1 !important;
+}
+.options{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}

@@ -1,0 +1,20 @@
+.controlArea{
+    position: relative;
+    gap: 10px;
+    background-color: #fff;
+    width: 100%;
+}
+.controlArea .searchBtn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 37px;
+    border: 1px solid #545454;
+    border-radius: 2px;
+    padding: 0px 10px;
+}
+.head{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}

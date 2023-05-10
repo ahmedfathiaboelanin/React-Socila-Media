@@ -1,0 +1,14 @@
+.side{
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    height: calc(100vh - 71px);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow-y: auto;
+}
+h5{
+    width: 100%;
+    padding: 15px;
+}

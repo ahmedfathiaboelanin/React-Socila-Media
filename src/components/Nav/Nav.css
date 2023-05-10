@@ -1,0 +1,137 @@
+.nav{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.bigNav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 15px  rgb(206, 206, 206);
+}
+.navLogo,.notifications{
+    width: 30%;
+}
+.navLogo img{
+    width: 50px;
+}
+/* search Area */
+.searchArea{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.searchArea input,.searchArea button{
+    height: 35px;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    color: black !important;
+}
+.searchArea button{
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.searchArea input{
+    width: 70%;
+    padding-left: 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+/* end search Area */
+
+/* notifications */
+.notifications{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.bell{
+    font-size: 40px;
+    margin-top: 10px;
+    background-color: #e6e6e6;
+    color: #545454;
+    border-radius: 50%;
+    padding: 10px;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#dropdown-basic-button{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    color: #545454;
+    font-size: 25px;
+}
+.drop{
+    width: 100%;
+}
+.LinkDrop{
+    border: none;
+    padding: 4px 0px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block !important;
+    width: 100% !important;
+}
+.LinkDrop.out{
+    color: #fff;
+}
+.LinkDrop.out:hover{
+    color: white;
+}
+/* end notifications */
+/* small nav */
+.smNav{
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0px;
+    right: -100%;
+    width: 100%;
+    background-color: #e6e6e6;
+    height: 100vh;
+    transition: ease all .5s;
+    z-index: 100;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 45px;
+    color: black;
+    background-color: #c4c3c3;
+    padding: 10px;
+    border-radius: 50%;
+}
+.hide{
+    right: 0 !important;
+}
+.smNavLinks{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    color: black;
+    padding: 20px 10px;
+}
+.smNavLinks:hover{
+    color: white;
+    background-color: #04AA6D;
+}
+.logoutBtn{
+    margin-top: 20px;
+    width: 70%;
+}
+/* end small nav */
