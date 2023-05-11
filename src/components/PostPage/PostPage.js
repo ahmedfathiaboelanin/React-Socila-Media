@@ -40,7 +40,7 @@ function PostPage() {
   return (
     <>
       {!cookie.token && <Navigate to="/" />}
-      <div className="postPage col-9">
+      <div className="postPage col-sm-9 col-11">
         <Post key={post._id} data={post} />
         <div className="commentArea">
           <div className="input">
