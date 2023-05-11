@@ -31,7 +31,7 @@ function Login() {
   // function to check if the user exists in db
   const loginfunc = async () => {
     await axios
-      .post("http://16.16.4.187/Users/login", {
+      .post("http://16.16.107.114/Users/login", {
         username: username1,
         password: password,
       })
@@ -50,7 +50,7 @@ function Login() {
   const signupfunc = () => {
     if (username1 !== "" && password !== "") {
       axios
-        .post("http://16.16.4.187/Users/add", {
+        .post("http://16.16.107.114/Users/add", {
           username: username1,
           password: password,
         })

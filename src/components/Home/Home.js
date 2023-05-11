@@ -15,11 +15,11 @@ function Home() {
   const [friend, setFriend] = useState([]);
 
   useEffect(() => {
-    axios.get("http://16.16.4.187/Posts").then((res) => setPost(res.data));
+    axios.get("http://16.16.107.114/Posts").then((res) => setPost(res.data));
   });
   useEffect(() => {
     axios
-      .get(`http://16.16.4.187/Users`)
+      .get(`http://16.16.107.114/Users`)
       .then((res) => setFriend(res.data.slice(0, 7)));
   });
   return (

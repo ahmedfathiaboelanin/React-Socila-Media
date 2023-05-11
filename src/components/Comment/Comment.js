@@ -6,7 +6,7 @@ function Comment({ data }) {
   const date = data.date.slice(0, 10);
   const deleteComment = () => {
     console.log("deleted");
-    axios.delete(`http://16.16.4.187/Comments/deleteComment/${data._id}`);
+    axios.delete(`http://16.16.107.114/Comments/deleteComment/${data._id}`);
   };
   return (
     <div className="comments">

@@ -17,7 +17,7 @@ function Post({ data }) {
   const deletePost = () => {
     axios.defaults.headers.common["Authorization"] = `Bearer ${cookie.token}`;
     axios
-      .delete(`http://16.16.4.187/Posts/deletePost/${data._id}`)
+      .delete(`http://16.16.107.114/Posts/deletePost/${data._id}`)
       .then((res) => console.log(res.data));
   };
   const path = `/postPage/${data._id}`;

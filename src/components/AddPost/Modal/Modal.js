@@ -20,7 +20,7 @@ function Example() {
 
   const addPostFunc = (e) => {
     e.preventDefault();
-    axios.post("http://16.16.4.187/Posts/add", {
+    axios.post("http://16.16.107.114/Posts/add", {
       body: content,
       title: title,
       userId: localStorage.getItem("userId"),

@@ -17,14 +17,14 @@ function PostPage() {
   const [cookie] = useCookies("token");
   useEffect(() => {
     axios
-      .get(`http://16.16.4.187/Posts/getPostById/${id}`)
+      .get(`http://16.16.107.114/Posts/getPostById/${id}`)
       .then((res) => setPost(res.data));
   });
   const addComment = () => {
     if (comment !== "") {
       axios.defaults.headers.common["Authorization"] = `Bearer ${cookie.token}`;
       axios
-        .post("http://16.16.4.187/Comments/addComment", {
+        .post("http://16.16.107.114/Comments/addComment", {
           body: comment,
           postId: id,
           uId: localStorage.getItem("userId"),
@@ -34,7 +34,7 @@ function PostPage() {
   };
   useEffect(() => {
     axios
-      .get(`http://16.16.4.187/Comments/postComment/${id}`)
+      .get(`http://16.16.107.114/Comments/postComment/${id}`)
       .then((res) => setComments(res.data));
   });
   return (
