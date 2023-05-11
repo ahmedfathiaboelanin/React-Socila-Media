@@ -14,7 +14,7 @@ function EditProfile() {
   function update() {
     axios.defaults.headers.common["Authorization"] = `Bearer ${cookie.token}`;
     axios
-      .put("http://16.16.107.114/Users/update", {
+      .put("https://sw-team-14-isiu.onrender.com/Users/update", {
         name: newName,
         email: newEmail,
         password: newPassword,

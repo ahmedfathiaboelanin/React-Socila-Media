@@ -13,12 +13,12 @@ function UserPosts() {
   axios.defaults.headers.common["Authorization"] = `Bearer ${cookie.token}`;
   useEffect(() => {
     axios
-      .get("http://16.16.107.114/Posts/getUserPosts")
+      .get("https://sw-team-14-isiu.onrender.com/Posts/getUserPosts")
       .then((res) => setPosts(res.data));
   }, [posts]);
   const [search, setSearch] = useState("");
   const searchPosts = () => {
-    axios.get("http://16.16.107.114/Posts/getUserPosts");
+    axios.get("https://sw-team-14-isiu.onrender.com/Posts/getUserPosts");
   };
   return (
     <div className="userPosts p-3 row justify-content-center gap-3">

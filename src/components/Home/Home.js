@@ -15,11 +15,13 @@ function Home() {
   const [friend, setFriend] = useState([]);
 
   useEffect(() => {
-    axios.get("http://16.16.107.114/Posts").then((res) => setPost(res.data));
+    axios
+      .get("https://sw-team-14-isiu.onrender.com/Posts")
+      .then((res) => setPost(res.data));
   });
   useEffect(() => {
     axios
-      .get(`http://16.16.107.114/Users`)
+      .get(`https://sw-team-14-isiu.onrender.com/Users`)
       .then((res) => setFriend(res.data.slice(0, 7)));
   });
   return (

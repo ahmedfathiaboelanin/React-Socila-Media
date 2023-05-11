@@ -17,14 +17,14 @@ function PostPage() {
   const [cookie] = useCookies("token");
   useEffect(() => {
     axios
-      .get(`http://16.16.107.114/Posts/getPostById/${id}`)
+      .get(`https://sw-team-14-isiu.onrender.com/Posts/getPostById/${id}`)
       .then((res) => setPost(res.data));
   });
   const addComment = () => {
     if (comment !== "") {
       axios.defaults.headers.common["Authorization"] = `Bearer ${cookie.token}`;
       axios
-        .post("http://16.16.107.114/Comments/addComment", {
+        .post("https://sw-team-14-isiu.onrender.com/Comments/addComment", {
           body: comment,
           postId: id,
           uId: localStorage.getItem("userId"),
@@ -34,7 +34,7 @@ function PostPage() {
   };
   useEffect(() => {
     axios
-      .get(`http://16.16.107.114/Comments/postComment/${id}`)
+      .get(`https://sw-team-14-isiu.onrender.com/Comments/postComment/${id}`)
       .then((res) => setComments(res.data));
   });
   return (
