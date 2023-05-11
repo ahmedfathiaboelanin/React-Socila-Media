@@ -88,7 +88,7 @@ function Component({data}) {
                     <p className="mb-0">Birth date</p>
                   </div>
                   <div className="col-sm-9">
-                    <p className="text-muted mb-0">{data.birthday}</p>
+                    <p className="text-muted mb-0">{data.birthday.slice(0, 10)}</p>
                   </div>
                 </div>
               </div>
