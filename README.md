@@ -1,5 +1,5 @@
 # Go Live 🚀🚀
-### https://mernsocialmedia.vercel.app/
+https://mernsocialmedia.vercel.app/
 
 # Getting Started with Create React App
 
