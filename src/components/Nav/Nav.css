@@ -94,7 +94,7 @@
 /* small nav */
 .smNav{
     align-items: center;
-    padding-top: 100px;
+    padding-top: 200px;
     flex-direction: column;
     position: fixed;
     bottom: 0px;
@@ -107,7 +107,7 @@
 }
 .close{
     position: absolute;
-    top: 20px;
+    top: 120px;
     right: 20px;
     font-size: 45px;
     color: black;
