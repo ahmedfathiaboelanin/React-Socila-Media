@@ -46,11 +46,6 @@ function Post({ data }) {
         {data.body}
       </div>
       <hr className="py-1 m-0" />
-      <div className="w-100 likeCount d-flex justify-content-between">
-        <div>{data.likes} Likes</div>
-        <div>100 Comments</div>
-      </div>
-      <hr className="py-1 m-0" />
       <div className="post-foot">
         <button onClick={handelLikes} className="react">
           <AiFillLike />
