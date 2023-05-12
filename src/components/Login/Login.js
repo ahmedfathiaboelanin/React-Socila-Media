@@ -31,7 +31,7 @@ function Login() {
   // function to check if the user exists in db
   const loginfunc = async () => {
     await axios
-      .post("https://sw-team-14-isiu.onrender.com/Users/login", {
+      .post("https://node-js-back-end.onrender.com/Users/login", {
         username: username1,
         password: password,
       })
@@ -50,7 +50,7 @@ function Login() {
   const signupfunc = () => {
     if (username1 !== "" && password !== "") {
       axios
-        .post("https://sw-team-14-isiu.onrender.com/Users/add", {
+        .post("https://node-js-back-end.onrender.com/Users/add", {
           username: username1,
           password: password,
         })

@@ -20,7 +20,7 @@ function Example() {
 
   const addPostFunc = (e) => {
     e.preventDefault();
-    axios.post("https://sw-team-14-isiu.onrender.com/Posts/add", {
+    axios.post("https://node-js-back-end.onrender.com/Posts/add", {
       body: content,
       title: title,
       userId: localStorage.getItem("userId"),

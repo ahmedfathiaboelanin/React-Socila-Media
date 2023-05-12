@@ -18,7 +18,7 @@ function Post({ data }) {
     axios.defaults.headers.common["Authorization"] = `Bearer ${cookie.token}`;
     axios
       .delete(
-        `https://sw-team-14-isiu.onrender.com/Posts/deletePost/${data._id}`
+        `https://node-js-back-end.onrender.com/Posts/deletePost/${data._id}`
       )
       .then((res) => console.log(res.data));
   };

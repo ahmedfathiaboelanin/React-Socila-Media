@@ -17,14 +17,14 @@ function PostPage() {
   const [cookie] = useCookies("token");
   useEffect(() => {
     axios
-      .get(`https://sw-team-14-isiu.onrender.com/Posts/getPostById/${id}`)
+      .get(`https://node-js-back-end.onrender.com/Posts/getPostById/${id}`)
       .then((res) => setPost(res.data));
   });
   const addComment = () => {
     if (comment !== "") {
       axios.defaults.headers.common["Authorization"] = `Bearer ${cookie.token}`;
       axios
-        .post("https://sw-team-14-isiu.onrender.com/Comments/addComment", {
+        .post("https://node-js-back-end.onrender.com/Comments/addComment", {
           body: comment,
           postId: id,
           uId: localStorage.getItem("userId"),
@@ -34,7 +34,7 @@ function PostPage() {
   };
   useEffect(() => {
     axios
-      .get(`https://sw-team-14-isiu.onrender.com/Comments/postComment/${id}`)
+      .get(`https://node-js-back-end.onrender.com/Comments/postComment/${id}`)
       .then((res) => setComments(res.data));
   });
   return (

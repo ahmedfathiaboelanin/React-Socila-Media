@@ -7,7 +7,7 @@ function Comment({ data }) {
   const deleteComment = () => {
     console.log("deleted");
     axios.delete(
-      `https://sw-team-14-isiu.onrender.com/Comments/deleteComment/${data._id}`
+      `https://node-js-back-end.onrender.com/Comments/deleteComment/${data._id}`
     );
   };
   return (

@@ -16,12 +16,12 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("https://sw-team-14-isiu.onrender.com/Posts")
+      .get("https://node-js-back-end.onrender.com/Posts")
       .then((res) => setPost(res.data));
   });
   useEffect(() => {
     axios
-      .get(`https://sw-team-14-isiu.onrender.com/Users`)
+      .get(`https://node-js-back-end.onrender.com/Users`)
       .then((res) => setFriend(res.data.slice(0, 7)));
   });
   return (
